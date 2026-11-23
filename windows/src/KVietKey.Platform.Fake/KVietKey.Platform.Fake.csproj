@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>KVietKey.Platform.Fake</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../KVietKey.Core/KVietKey.Core.csproj" />
+  </ItemGroup>
+
+</Project>

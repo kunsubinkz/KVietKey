@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KVietKey.App/KVietKey.App.csproj" />
+    <Project Path="src/KVietKey.Core/KVietKey.Core.csproj" />
+    <Project Path="src/KVietKey.Engine/KVietKey.Engine.csproj" />
+    <Project Path="src/KVietKey.Platform.Fake/KVietKey.Platform.Fake.csproj" />
+    <Project Path="src/KVietKey.Platform.Windows/KVietKey.Platform.Windows.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/KVietKey.App.Tests/KVietKey.App.Tests.csproj" />
+    <Project Path="tests/KVietKey.Core.Tests/KVietKey.Core.Tests.csproj" />
+    <Project Path="tests/KVietKey.Engine.Tests/KVietKey.Engine.Tests.csproj" />
+  </Folder>
+</Solution>

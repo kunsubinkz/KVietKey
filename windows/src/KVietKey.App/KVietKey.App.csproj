@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KVietKey.App</RootNamespace>
+    <AssemblyName>KVietKey</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets/kvietkey.ico</ApplicationIcon>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <Description>Bộ gõ tiếng Việt cho Windows</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.23" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.23" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.23" />
+    <PackageReference Include="Avalonia.Headless" Version="11.3.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../KVietKey.Core/KVietKey.Core.csproj" />
+    <ProjectReference Include="../KVietKey.Platform.Windows/KVietKey.Platform.Windows.csproj" />
+    <ProjectReference Include="../KVietKey.Platform.Fake/KVietKey.Platform.Fake.csproj" />
+    <AvaloniaResource Include="Assets/**" />
+    <InternalsVisibleTo Include="KVietKey.App.Tests" />
+  </ItemGroup>
+
+</Project>

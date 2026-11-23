@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KVietKey.App.App"
+             RequestedThemeVariant="Light">
+  <Application.Resources>
+    <Color x:Key="SystemAccentColor">#1F5BFF</Color>
+    <Color x:Key="SystemAccentColorDark1">#1A4FE0</Color>
+    <Color x:Key="SystemAccentColorDark2">#1743C0</Color>
+    <Color x:Key="SystemAccentColorDark3">#0B2A6F</Color>
+    <Color x:Key="SystemAccentColorLight1">#4F7FFF</Color>
+    <Color x:Key="SystemAccentColorLight2">#7FA0FF</Color>
+    <Color x:Key="SystemAccentColorLight3">#B7CBFF</Color>
+  </Application.Resources>
+
+  <Application.Styles>
+    <FluentTheme />
+    <StyleInclude Source="avares://KVietKey/Theme/Styles.axaml" />
+  </Application.Styles>
+</Application>

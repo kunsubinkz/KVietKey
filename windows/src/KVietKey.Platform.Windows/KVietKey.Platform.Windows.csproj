@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>KVietKey.Platform.Windows</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../KVietKey.Core/KVietKey.Core.csproj" />
+    <InternalsVisibleTo Include="KVietKey.Core.Tests" />
+    <InternalsVisibleTo Include="KVietKey" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,200 @@
+{
+  "entries" : {
+    "Ab" : "exact",
+    "dc" : "được",
+    "hcm" : "Hồ Chí Minh",
+    "vn" : "Việt Nam"
+  },
+  "expand" : [
+    {
+      "expected" : "Việt Nam",
+      "keepCase" : true,
+      "typed" : "vn"
+    },
+    {
+      "expected" : "Việt Nam",
+      "keepCase" : false,
+      "typed" : "vn"
+    },
+    {
+      "expected" : "VIỆT NAM",
+      "keepCase" : true,
+      "typed" : "VN"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "VN"
+    },
+    {
+      "expected" : "Việt Nam",
+      "keepCase" : true,
+      "typed" : "Vn"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "Vn"
+    },
+    {
+      "expected" : "Việt Nam",
+      "keepCase" : true,
+      "typed" : "vN"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "vN"
+    },
+    {
+      "expected" : "được",
+      "keepCase" : true,
+      "typed" : "dc"
+    },
+    {
+      "expected" : "được",
+      "keepCase" : false,
+      "typed" : "dc"
+    },
+    {
+      "expected" : "Được",
+      "keepCase" : true,
+      "typed" : "Dc"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "Dc"
+    },
+    {
+      "expected" : "ĐƯỢC",
+      "keepCase" : true,
+      "typed" : "DC"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "DC"
+    },
+    {
+      "expected" : "Hồ Chí Minh",
+      "keepCase" : true,
+      "typed" : "hcm"
+    },
+    {
+      "expected" : "Hồ Chí Minh",
+      "keepCase" : false,
+      "typed" : "hcm"
+    },
+    {
+      "expected" : "HỒ CHÍ MINH",
+      "keepCase" : true,
+      "typed" : "HCM"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "HCM"
+    },
+    {
+      "expected" : "Hồ Chí Minh",
+      "keepCase" : true,
+      "typed" : "Hcm"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "Hcm"
+    },
+    {
+      "expected" : "exact",
+      "keepCase" : true,
+      "typed" : "Ab"
+    },
+    {
+      "expected" : "exact",
+      "keepCase" : false,
+      "typed" : "Ab"
+    },
+    {
+      "keepCase" : true,
+      "typed" : "ab"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "ab"
+    },
+    {
+      "keepCase" : true,
+      "typed" : "AB"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "AB"
+    },
+    {
+      "keepCase" : true,
+      "typed" : "x"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "x"
+    },
+    {
+      "keepCase" : true,
+      "typed" : ""
+    },
+    {
+      "keepCase" : false,
+      "typed" : ""
+    },
+    {
+      "keepCase" : true,
+      "typed" : "v"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "v"
+    },
+    {
+      "keepCase" : true,
+      "typed" : "V"
+    },
+    {
+      "keepCase" : false,
+      "typed" : "V"
+    }
+  ],
+  "parse" : [
+    {
+      "entries" : {
+        "dc" : "được",
+        "vn" : "Việt Nam"
+      },
+      "export" : "dc:được\nvn:Việt Nam\n",
+      "text" : "vn: Việt Nam\n\nbad line\ndc:được\n"
+    },
+    {
+      "entries" : {
+        "a" : "b:c"
+      },
+      "export" : "a:b:c\n",
+      "text" : "a:b:c\n"
+    },
+    {
+      "entries" : {
+
+      },
+      "export" : "\n",
+      "text" : ":x\ny:\n"
+    },
+    {
+      "entries" : {
+        "k" : "v v",
+        "z" : "1"
+      },
+      "export" : "k:v v\nz:1\n",
+      "text" : "  k  :  v v  \r\nz:1\r\n"
+    },
+    {
+      "entries" : {
+
+      },
+      "export" : "\n",
+      "text" : ""
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>KVietKey.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../KVietKey.Engine/KVietKey.Engine.csproj" />
+    <InternalsVisibleTo Include="KVietKey.Core.Tests" />
+  </ItemGroup>
+
+</Project>
