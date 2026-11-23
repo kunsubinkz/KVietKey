@@ -1,0 +1,20 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build, test and package
+        run: ./build_release.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KVietKey
+          path: |
+            build/release/*.zip
+            build/release/*.dmg
+            build/release/SHA256SUMS.txt
